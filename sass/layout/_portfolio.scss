@@ -1,0 +1,19 @@
+.portfolio {
+  @include section;
+
+  &__uppertitle {
+    margin-bottom: 44px;
+  }
+
+  &__list {
+    --items: 1;
+
+    @media screen and(min-width: $tablet) {
+      --items: 2;
+    }
+
+    @media screen and(min-width: $desktop) {
+      --items: 4;
+    }
+  }
+}

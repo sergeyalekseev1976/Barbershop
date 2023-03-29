@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body data-page>
+    <!-- header sections -->
+    <header class="header" data-header>
+      <div class="header__container container">
+        <a class="header__logo" href="./index.html" aria-label="barbershop logo">
+          <svg class="header__icon" width="69" height="56">
+            <use href="./images/icons.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#prices">Services and prices</a></li>
+            <li class="nav__item"><a class="nav__link" href="#masters">Masters</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="header__contacts">
+          <a class="header__phone" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="header__btn btn" type="button" data-modal-open>Online-booking</button>
+        </div>
+        <button class="menu-btn" type="button" aria-label="header menu open" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu-open"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- main sections -->
+    <main>
+      <!-- hero sections -->
+      <section class="hero" id="hero">
+        <div class="hero__container container">
+          <div class="hero__left-side">
+            <ul class="hero__list">
+              <li class="hero__item">
+                <a class="hero__link" target="_blank" rel="noopener noreferrer" href=""
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero__item">
+                <a class="hero__link" target="_blank" rel="noopener noreferrer" href="">Youtube</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__right-side">
+            <p class="uppertitle--mode-dark uppertitle" lang="en">A HAIR SALON FOR MEN IN KYIV</p>
+            <h1 class="hero__title">BarberShop</h1>
+            <p class="hero__desc">
+              We are experts in trendy men’s haircuts. We&nbsp;work&nbsp;quickly,&nbsp;carefully and
+              with style.
+            </p>
+            <div class="swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/hero/slider-1_lg@1x.webp 1x,
+                        ./images/hero/slider-1_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/hero/slider-1_lg@1x.jpg 1x,
+                        ./images/hero/slider-1_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/hero/slider-1_md@1x.webp 1x,
+                        ./images/hero/slider-1_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/hero/slider-1_md@1x.jpg 1x,
+                        ./images/hero/slider-1_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img src="./images/hero/slider-1_md@1x.jpg" loading="lazy" alt="slide-1" />
+                  </picture>
+                </li>
+                <li class="swiper-slide">
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/hero/slider-2_lg@1x.webp 1x,
+                        ./images/hero/slider-2_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/hero/slider-2_lg@1x.jpg 1x,
+                        ./images/hero/slider-2_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/hero/slider-2_md@1x.webp 1x,
+                        ./images/hero/slider-2_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/hero/slider-2_md@1x.jpg 1x,
+                        ./images/hero/slider-2_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img src="./images/hero/slider-2_md@1x.jpg" loading="lazy" alt="slide-2" />
+                  </picture>
+                </li>
+                <li class="swiper-slide">
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/hero/slider-3_lg@1x.webp 1x,
+                        ./images/hero/slider-3_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/hero/slider-3_lg@1x.jpg 1x,
+                        ./images/hero/slider-3_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/hero/slider-3_md@1x.webp 1x,
+                        ./images/hero/slider-3_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/hero/slider-3_md@1x.jpg 1x,
+                        ./images/hero/slider-3_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img src="./images/hero/slider-3_md@1x.jpg" loading="lazy" alt="slide-3" />
+                  </picture>
+                </li>
+              </ul>
+              <div class="swiper-pagination">
+                <div class="swiper-pagination-bullet"></div>
+                <div class="swiper-pagination-bullet"></div>
+                <div class="swiper-pagination-bullet"></div>
+              </div>
+              <ul class="swiper__controls">
+                <li class="swiper-button-prev">Back</li>
+                <li class="swiper-button-next">Forward</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about sections -->
+      <section class="about" id="about">
+        <div class="about__container container">
+          <ul class="about__list">
+            <li class="about__item">
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/about-1_lg@1x.webp 1x,
+                    ./images/about/about-1_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/about/about-1_lg@1x.jpg 1x, ./images/about/about-1_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about/about-1_md@1x.webp 1x,
+                    ./images/about/about-1_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/about/about-1_md@1x.jpg 1x, ./images/about/about-1_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- fallback -->
+                <img
+                  class="about__img"
+                  src="./images/about/about-1_md@1x.jpg"
+                  width="270"
+                  height="445"
+                  loading="lazy"
+                  alt="photo"
+                />
+              </picture>
+            </li>
+            <li class="about__item">
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/about-2_lg@1x.webp 1x,
+                    ./images/about/about-2_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/about/about-2_lg@1x.jpg 1x, ./images/about/about-1_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about/about-2_md@1x.webp 1x,
+                    ./images/about/about-2_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/about/about-2_md@1x.jpg 1x, ./images/about/about-1_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- fallback -->
+                <img
+                  class="about__img"
+                  src="./images/about/about-2_md@1x.jpg"
+                  width="270"
+                  height="445"
+                  loading="lazy"
+                  alt="photo"
+                />
+              </picture>
+            </li>
+          </ul>
+          <div class="about__content">
+            <p class="uppertitle">About</p>
+            <h2 class="about__title section-title">Best Barbershop in your city</h2>
+            <h3 class="about__subtitle">
+              If you want to add more confidence to your image, you should definitely visit us.
+            </h3>
+            <p class="about__desc">
+              We are a team that never stops at what has been achieved and are thirsty for changes.
+              And when you fall into the hands of our master, you will never be the same again. We
+              are a team that is always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button class="about__btn btn" type="button" data-modal-open2>ONLINE-BOOKING</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- prices sections -->
+      <section class="price" id="prices">
+        <div class="container">
+          <p class="uppertitle--mode-dark uppertitle">spend your time with the best masters</p>
+          <h2 class="price__title section-title section-title--mode-light">Services and prices</h2>
+          <ul class="price__list">
+            <li class="price__item">
+              <ul class="price__inner-list">
+                <li class="price__inner-item">
+                  <span class="price__inner-desc">Men’s haircut</span>
+                  <span class="price__inner-desc">from 300 uah.</span>
+                </li>
+                <li class="price__inner-item">
+                  <span class="price__inner-desc">Beard trim</span>
+                  <span class="price__inner-desc">from 300 uah.</span>
+                </li>
+                <li class="price__inner-item">
+                  <span class="price__inner-desc">Mustache trim</span>
+                  <span class="price__inner-desc">from 200 uah.</span>
+                </li>
+                <li class="price__inner-item">
+                  <span class="price__inner-desc">Straight razor shave </span>
+                  <span class="price__inner-desc">from 200 uah.</span>
+                </li>
+              </ul>
+            </li>
+            <li class="price__item">
+              <ul class="price__inner-list">
+                <li class="price__inner-item">
+                  <span class="price__inner-desc">Trainee’s haircut</span>
+                  <span class="price__inner-desc">from 50 uah.</span>
+                </li>
+                <li class="price__inner-item">
+                  <span class="price__inner-desc">Haircut under the nozzle</span>
+                  <span class="price__inner-desc">from 200 uah.</span>
+                </li>
+                <li class="price__inner-item">
+                  <span class="price__inner-desc">Children’s haircut (0-12 y.o.) </span>
+                  <span class="price__inner-desc">from 300 uah.</span>
+                </li>
+                <li class="price__inner-item">
+                  <span class="price__inner-desc">Camouflage of gray hair</span>
+                  <span class="price__inner-desc">from 200 uah.</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="price__btn btn" type="button" data-modal-open3>online-booking</button>
+        </div>
+      </section>
+
+      <!-- Benefits sections -->
+      <section class="benefits">
+        <div class="benefits__container container">
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <p class="benefits__item-quantity">600</p>
+              <p class="benefits__item-desc">Satisfied customers per day</p>
+            </li>
+            <li class="benefits__item">
+              <p class="benefits__item-quantity">20</p>
+              <p class="benefits__item-desc">Kyiv’s best barbers</p>
+            </li>
+            <li class="benefits__item">
+              <p class="benefits__item-quantity">50</p>
+              <p class="benefits__item-desc">Awards for excellent service</p>
+            </li>
+            <li class="benefits__item">
+              <p class="benefits__item-quantity">100</p>
+              <p class="benefits__item-desc">Gifts for regular customers</p>
+            </li>
+          </ul>
+          <div class="benefits__group">
+            <p class="uppertitle">old traditional school</p>
+            <h2 class="section-title benefits__title">Why people come to us?</h2>
+            <p class="benefits__desc">
+              Only good things are said about us. But it's better to see and feel 1 time than read
+              10 times.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- team sections -->
+      <section class="team" id="masters">
+        <div class="container team__container">
+          <p class="uppertitle">for true enjoyers of the atmosphere</p>
+          <h2 class="team__title section-title">Our barbers</h2>
+          <ul class="card-set team__list">
+            <li class="card-set__item team__item">
+              <div class="team__thumb">
+                <picture>
+                  <!-- desktop screen -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/team/team-1_lg@1x.webp 1x, ./images/team/team-1_lg@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/team/team-1_lg@1x.jpg 1x, ./images/team/team-1_lg@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/team/team-1_md@1x.webp 1x, ./images/team/team-1_md@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/team/team-1_md@1x.jpg 1x, ./images/team/team-1_md@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- mobile screen -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/team/team-1_sm@1x.webp 1x, ./images/team/team-1_sm@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/team/team-1_sm@1x.jpg 1x, ./images/team/team-1_sm@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- fallback -->
+                  <img src="./images/team/team-1_sm@1x.jpg" alt="photo" />
+                </picture>
+              </div>
+              <h3 class="team__subtitle">John Smith</h3>
+              <p class="team__desc">Extreme Barber</p>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="" aria-label="instagram">
+                    <svg class="icon" height="20" width="20">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="" aria-label="twitter">
+                    <svg class="icon" height="20" width="20">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="" aria-label="facebook">
+                    <svg class="icon" height="20" width="20">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="" aria-label="linkedin">
+                    <svg class="icon" height="20" width="20">
+                      <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="card-set__item team__item">
+              <div class="team__thumb">
+                <picture>
+                  <!-- desktop screen -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/team/team-2_lg@1x.webp 1x, ./images/team/team-1_lg@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/team/team-2_lg@1x.jpg 1x, ./images/team/team-1_lg@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/team/team-2_md@1x.webp 1x, ./images/team/team-1_md@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/team/team-2_md@1x.jpg 1x, ./images/team/team-1_md@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- mobile screen -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/team/team-2_sm@1x.webp 1x, ./images/team/team-1_sm@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/team/team-2_sm@1x.jpg 1x, ./images/team/team-1_sm@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- fallback -->
+                  <img src="./images/team/team-2_sm@1x.jpg" width="450" height="346" alt="photo" />
+                </picture>
+              </div>
+              <h3 class="team__subtitle">Michele Doe</h3>
+              <p class="team__desc">Extreme Barber</p>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="">
+                    <svg class="icon" height="20" width="20">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="">
+                    <svg class="icon" height="20" width="20">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="">
+                    <svg class="icon" height="20" width="20">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="">
+                    <svg class="icon" height="20" width="20">
+                      <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="card-set__item team__item">
+              <div class="team__thumb">
+                <picture>
+                  <!-- desktop screen -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/team/team-3_lg@1x.webp 1x, ./images/team/team-1_lg@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/team/team-3_lg@1x.jpg 1x, ./images/team/team-1_lg@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- tablet screen -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/team/team-3_md@1x.webp 1x, ./images/team/team-1_md@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/team/team-3_md@1x.jpg 1x, ./images/team/team-1_md@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- mobile screen -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/team/team-3_sm@1x.webp 1x, ./images/team/team-1_sm@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/team/team-3_sm@1x.jpg 1x, ./images/team/team-1_sm@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <!-- fallback -->
+                  <img src="./images/team/team-3_sm@1x.jpg" width="450" height="346" alt="photo" />
+                </picture>
+              </div>
+
+              <h3 class="team__subtitle">Alan Black</h3>
+              <p class="team__desc">Extreme Barber</p>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="">
+                    <svg class="icon" height="20" width="20">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="">
+                    <svg class="icon" height="20" width="20">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="">
+                    <svg class="icon" height="20" width="20">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="">
+                    <svg class="icon" height="20" width="20">
+                      <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- portfolio sections -->
+      <section class="portfolio">
+        <div class="container">
+          <h2 class="visually-hidden">Portfolio</h2>
+          <p class="uppertitle">in Latin, "barba" means "beard"</p>
+          <ul class="portfolio__list card-set">
+            <li class="card-set-item">
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/portfolio-1_lg@1x.webp 1x,
+                    ./images/portfolio/portfolio-1_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/portfolio-1_lg@1x.jpg 1x,
+                    ./images/portfolio/portfolio-1_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/portfolio-1_md@1x.webp 1x,
+                    ./images/portfolio/portfolio-1_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/portfolio-1_md@1x.jpg 1x,
+                    ./images/portfolio/portfolio-1_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/portfolio-1_sm@1x.webp 1x,
+                    ./images/portfolio/portfolio-1_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/portfolio-1_sm@1x.jpg 1x,
+                    ./images/portfolio/portfolio-1_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img src="./images/portfolio/portfolio-1_sm@1x.jpg" alt="" />
+              </picture>
+            </li>
+            <li class="card-set-item">
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/portfolio-2_lg@1x.webp 1x,
+                    ./images/portfolio/portfolio-2_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/portfolio-2_lg@1x.jpg 1x,
+                    ./images/portfolio/portfolio-2_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/portfolio-2_md@1x.webp 1x,
+                    ./images/portfolio/portfolio-2_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/portfolio-2_md@1x.jpg 1x,
+                    ./images/portfolio/portfolio-2_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/portfolio-2_sm@1x.webp 1x,
+                    ./images/portfolio/portfolio-2_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/portfolio-2_sm@1x.jpg 1x,
+                    ./images/portfolio/portfolio-2_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img src="./images/portfolio/portfolio-2_sm@1x.jpg" alt="" />
+              </picture>
+            </li>
+            <li class="card-set-item">
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/portfolio-3_lg@1x.webp 1x,
+                    ./images/portfolio/portfolio-3_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/portfolio-3_lg@1x.jpg 1x,
+                    ./images/portfolio/portfolio-3_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/portfolio-3_md@1x.webp 1x,
+                    ./images/portfolio/portfolio-3_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/portfolio-3_md@1x.jpg 1x,
+                    ./images/portfolio/portfolio-3_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/portfolio-3_sm@1x.webp 1x,
+                    ./images/portfolio/portfolio-3_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/portfolio-3_sm@1x.jpg 1x,
+                    ./images/portfolio/portfolio-3_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img src="./images/portfolio/portfolio-3_sm@1x.jpg" alt="" />
+              </picture>
+            </li>
+            <li class="card-set-item">
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/portfolio-4_lg@1x.webp 1x,
+                    ./images/portfolio/portfolio-4_lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/portfolio/portfolio-4_lg@1x.jpg 1x,
+                    ./images/portfolio/portfolio-4_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/portfolio-4_md@1x.webp 1x,
+                    ./images/portfolio/portfolio-4_md@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/portfolio/portfolio-4_md@1x.jpg 1x,
+                    ./images/portfolio/portfolio-4_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/portfolio-4_sm@1x.webp 1x,
+                    ./images/portfolio/portfolio-4_sm@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/portfolio-4_sm@1x.jpg 1x,
+                    ./images/portfolio/portfolio-4_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img src="./images/portfolio/portfolio-4_sm@1x.jpg" alt="photo" />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- contacts sections -->
+      <section class="contacts" id="contacts">
+        <div class="contacts__container container">
+          <div class="contacts--left-side">
+            <h2 class="contacts__form-title section-title section-title--mode-light">
+              Online-booking
+            </h2>
+            <form class="contacts-form">
+              <div class="contacts-form__wrap">
+                <label class="contacts-form__group">
+                  <input
+                    class="contacts-form__input"
+                    type="text"
+                    name="username"
+                    placeholder="Antony Black"
+                    required
+                    minlength="3"
+                  />
+                  <span class="contacts-form__label">name*</span>
+                  <span class="contacts-form__notification"
+                    >Please enter at least 3 characters</span
+                  >
+                </label>
+                <label class="contacts-form__group">
+                  <input
+                    class="contacts-form__input"
+                    type="tel"
+                    name="tel"
+                    placeholder="+38 050 555 55 55"
+                    required
+                    pattern="\+?[0-9\s\-\(\)]+"
+                    minlength="13"
+                    maxlength="13"
+                  />
+                  <span class="contacts-form__label">phone*</span>
+                </label>
+              </div>
+              <label class="contacts-form__group">
+                <textarea
+                  class="contacts-form__message"
+                  name="message"
+                  placeholder=" "
+                  rows="5"
+                ></textarea>
+                <span class="contacts-form__label">message</span>
+              </label>
+              <button class="contacts-form__btn btn" type="submit">send</button>
+            </form>
+          </div>
+          <div class="contacts--right-side">
+            <div class="contacts__group">
+              <h2 class="contacts__title section-title section-title--mode-light">Contacts</h2>
+              <address>
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <a class="contacts__link" href="https://goo.gl/maps/iWPp1BaHWjGn6edm7">
+                      <svg width="24" height="24">
+                        <use href="./images/icons.svg#map-pin"></use>
+                      </svg>
+                      <span>st. Vasilkovaya, 7A Kiev,&nbsp;08132</span>
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link" href="tel:+380441111111">
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/icons.svg#phone"></use>
+                      </svg>
+                      +38 044 111 11 11
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link" href="mailto:barbershop@email.com">
+                      <svg class="icon" width="24" height="24">
+                        <use href="./images/icons.svg#mail"></use>
+                      </svg>
+                      barbershop@email.com
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="contacts__timetable">
+              <h3 class="contacts__uppertitle uppertitle--mode-dark uppertitle">working hours</h3>
+              <p class="contacts__time">Every day from 9:00 to 22:00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer sections -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <p class="footer__copyright">&#169; Copyright 2022</p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" target="_blank" rel="noopener noreferrer" href="">Instagram</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" target="_blank" rel="noopener noreferrer" href="">Youtube</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop--is-hidden backdrop" data-modal>
+      <div class="modal">
+        <button class="modal__btn" data-modal-close>
+          <svg class="modal__icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <form class="register-form">
+          <strong class="register-form__title">Leave your details, we will call you back</strong>
+          <div class="register-form__group" role="group">
+            <label class="register-form__wrap">
+              <span class="register-form__label">Name</span>
+              <input class="register-form__input" type="text" />
+              <svg class="register-form__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </label>
+            <label class="register-form__wrap">
+              <span class="register-form__label">Phone</span>
+              <input class="register-form__input" type="tel" />
+              <svg class="register-form__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </label>
+            <label class="register-form__wrap">
+              <span class="register-form__label">Email</span>
+              <input class="register-form__input" type="email" />
+              <svg class="register-form__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </label>
+            <label class="register-form__wrap">
+              <span class="register-form__label">Comment</span>
+              <textarea
+                class="register-form__message"
+                name="textarea"
+                rows="5"
+                placeholder="Enter your message"
+              ></textarea>
+            </label>
+          </div>
+
+          <label class="agreement">
+            <input class="agreement__checkbox visually-hidden" type="checkbox" name="agreement" />
+            <svg class="agreement__icon" width="16" height="15">
+              <use class="agreement__icon-uncheck" href="./images/icons.svg#icon-uncheck"></use>
+              <use class="agreement__icon-check" href="./images/icons.svg#icon-check"></use>
+            </svg>
+            <span class="agreement__text">
+              I agree with the mailing and accept it
+              <a class="agreement__link" href="">contract terms</a>
+            </span>
+          </label>
+
+          <button class="register-form__btn btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="menu-overlay" data-menu>
+      <div class="menu-container">
+        <button class="menu-btn" type="button" data-menu-close>
+          <svg class="menu-close-icon" width="40" height="40">
+            <use href="./images/icons.svg#menu-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-nav list">
+          <li class="mobile-nav-item">
+            <a href="#about" class="mobile-link link">About</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#prices" class="mobile-link link">Prices and services</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#masters" class="mobile-link link">Masters</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#contacts" class="mobile-link link">Contacts</a>
+          </li>
+        </ul>
+        <div class="mobile-contacts">
+          <a class="mobile-contacts-link link" href="+380441111111">+38 044 111 11 11</a>
+          <button class="mobile-contacts-btn btn" type="button">online-booking</button>
+        </div>
+        <ul class="mobile-socilas list">
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socilas-link link">Instagram</a>
+          </li>
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socilas-link link">Twitter</a>
+          </li>
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socilas-link link">Facebook</a>
+          </li>
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socilas-link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/header-scroll.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials__link {
+  @extend %reset-link;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: var(--main-light-cl);
+
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+}

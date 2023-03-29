@@ -1,0 +1,98 @@
+.benefits {
+  @include section;
+
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media screen and (max-width: calc($desktop - 1px)) {
+      gap: 44px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+    }
+  }
+
+  &__group {
+    @media screen and (min-width: $tablet) {
+      max-width: 500px;
+    }
+    @media screen and (min-width: $desktop) {
+      flex-basis: 500px;
+      margin-left: auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 417px;
+
+    @media screen and(max-width: calc($mobile - 1px)) {
+      justify-content: center;
+      gap: 40px;
+    }
+
+    @media screen and(min-width: $mobile) {
+      align-items: flex-end;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+      margin-left: auto;
+      width: 450px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 370px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.benefits__item {
+  width: 193px;
+  min-height: 133px;
+  padding: 20px;
+
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+
+  @media screen and (min-width: $desktop) {
+    width: 170px;
+  }
+
+  background-color: var(--light-bg-cl);
+  text-align: center;
+
+  &:nth-child(2n + 1) {
+    @media screen and(min-width: $mobile) {
+      margin-bottom: 30px;
+      margin-right: 30px;
+    }
+  }
+}
+
+.benefits__item-quantity {
+  display: flex;
+  justify-content: center;
+
+  @include fonts(42px, 57px, 700, 0.05em);
+  text-align: center;
+
+  &::after {
+    content: '\002b';
+    display: block;
+
+    @include fonts(16px, 22px, 600);
+    font-style: normal;
+    color: var(--accent-cl);
+  }
+}
+
+.benefits__item-desc {
+  @include fonts(11px, 15px, 600, 0.1em);
+}

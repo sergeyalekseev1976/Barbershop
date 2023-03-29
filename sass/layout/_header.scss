@@ -1,0 +1,72 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  transition: background-color var(--anim-fast), backdrop-filter var(--anim-fast);
+
+  &--no-transparency {
+    background-color: rgba(25, 28, 38, 0.5);
+    backdrop-filter: blur(4px);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    @media screen and(max-width: calc($tablet - 1px)) {
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__logo {
+    margin-right: 70px;
+  }
+
+  &__icon {
+    @media screen and(max-width: calc($tablet - 1px)) {
+      fill: var(--main-light-cl);
+    }
+  }
+
+  &__contacts {
+    margin-left: auto;
+
+    @media screen and(min-width: $tablet) {
+      margin-right: 20px;
+    }
+
+    @media screen and(min-width: $desktop) {
+      margin-right: 0px;
+    }
+  }
+
+  &__btn {
+    @media screen and(max-width: calc($tablet - 1px)) {
+      display: none;
+    }
+  }
+}
+
+.header__phone {
+  @extend %reset-link;
+  display: none;
+
+  @media screen and(min-width: $desktop) {
+    display: inline-block;
+    margin-right: 40px;
+    padding-top: 52px;
+    padding-bottom: 52px;
+
+    @include fonts(12px, 16px, 600, 0.1em);
+    color: var(--main-light-cl);
+
+    transition: color var(--animation);
+  }
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+}

@@ -1,0 +1,35 @@
+.section-title {
+  @include fonts(42px, 49px, 700, 0.05em);
+  font-family: var(--secondary-font);
+  color: var(--main-dark-cl);
+}
+
+.section-title--mode-light {
+  color: var(--main-light-cl);
+}
+
+.uppertitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+
+  @include fonts(11px, 15px, 600, 0.1em);
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: var(--main-dark-cl);
+  }
+}
+
+.uppertitle--mode-dark {
+  color: rgba(157, 164, 189, 0.6);
+
+  &::before {
+    background-color: rgba(157, 164, 189, 0.6);
+  }
+}

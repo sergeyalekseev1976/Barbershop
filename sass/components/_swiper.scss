@@ -1,0 +1,100 @@
+.swiper {
+  @media screen and (max-width: calc($tablet - 1px)) {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 570px;
+    height: 680px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1070px;
+  }
+}
+
+.swiper-slide {
+  z-index: -1;
+}
+
+.swiper__controls {
+  @media screen and (max-width: calc($tablet - 1px)) {
+    display: none;
+  }
+
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: static;
+  height: fit-content;
+  padding-bottom: 8px;
+
+  @include fonts(11px, 15px, 600, 0.1em);
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+.swiper-button-next {
+  width: 70px;
+  justify-content: right;
+}
+
+.swiper-button-prev {
+  width: 60px;
+  left: 400px;
+  justify-content: left;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-disabled.swiper-button-next,
+.swiper-button-disabled.swiper-button-next {
+  // color: rgba(157, 164, 189, 0.6);
+  // border-bottom: 1px solid rgba(157, 164, 189, 0.6);
+  color: rgb(157, 164, 189);
+  border-bottom: 1px solid rgb(157, 164, 189);
+  opacity: 0.6;
+}
+
+.swiper-pagination {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  padding-right: 10px;
+  top: 50%;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 2px;
+  opacity: 1;
+
+  background-color: var(--secondary-font-cl);
+}
+
+.swiper-pagination-bullet-active {
+  width: 18px;
+  background-color: var(--main-light-cl);
+}

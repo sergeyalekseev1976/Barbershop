@@ -1,0 +1,13 @@
+.logo {
+  font-family: var(--secondary-font);
+  @include fonts(26px, 31px, 700);
+  color: var(--logo-dark-cl);
+
+  &--light {
+    color: var(--main-light);
+  }
+
+  &__text {
+    color: var(--accent-cl);
+  }
+}

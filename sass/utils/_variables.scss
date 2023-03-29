@@ -1,0 +1,29 @@
+:root {
+  --primary-font: 'Open sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  --main-light-cl: #fff;
+  --main-dark-cl: #303030;
+  --accent-cl: #ff6c00;
+
+  --main-font-cl: #555555;
+  --secondary-font-cl: #9da4bd;
+
+  --light-bg-cl: #f7f7f7;
+  --dark-bg-cl: #191c26;
+  --price-bg-cl: #111319;
+
+  --contacts-form-cl: rgba(157, 164, 189, 0.4);
+
+  /* other */
+  --indent: 30px;
+  --items: 3;
+  --anim-fast: 300ms ease-in-out;
+  --anim-slow: 600ms ease-out;
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
